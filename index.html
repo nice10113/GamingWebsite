@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/eac6c70ff4.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/Games/logos/favicon.ico">
+    <title>WiredIn</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <img src="images/Games/logos/GamingLogo.jpg">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">NEW GAMES</a></li>
+                        <li><a href="#">UPCOMING</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">NEWS</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="play_button">
+                <img src="images/Games/logos/playBtn.png">
+            </div>
+        </div>
+
+        <div class="gameposter">
+            <h3>Popular Games</h3>
+            <div class="border"></div>
+            <div class="game-trailer-grid">
+                <div class="trailer1">
+                    <a href="GamePages/BLTPS/borderlandsTPS.html">
+                        <img src="images/Games/GamingBackgrounds/BorderlandTPS.jpg">
+                    </a>
+                </div>
+                <div class="trailer1">
+                    <a href="GamePages/Tekken7/tekken7.html">
+                        <img src="images/Games/GamingBackgrounds/Tekken7Background.jpg">
+                    </a>
+                </div>
+                <div class="trailer1">
+                    <a href="GamePages/CODMW3/mw3.html">
+                        <img src="images/Games/GamingBackgrounds/CODMW3.jpg">
+                    </a>
+                </div>
+                <div class="trailer1 trailer-last">
+                    <a href="GamePages/Division2/division2.html">
+                        <img src="images/Games/GamingBackgrounds/TheDivision2.jpg">
+                    </a>
+                </div>
+            </div>
+            <a class="viewall" href="#">View All</a>
+        </div>
+
+        <div class="gameposter">
+            <h3>New Releases</h3>
+            <div class="border"></div>
+            <div class="game-trailer-grid">
+                <div class="trailer1">
+                    <a href="GamePages/Overwatch/overwatch.html">
+                        <img src="images/Games/GamingBackgrounds/OverwatchBackground.jpg">
+                    </a>
+                </div>
+                <div class="trailer1">
+                    <a href="GamePages/DBFZ/DBFZ.html">
+                        <img src="images/Games/GamingBackgrounds/DBFZ.jpg">
+                    </a>
+                </div>
+                <div class="trailer1">
+                    <a href="GamePages/BO4/bo4.html">
+                        <img src="images/Games/GamingBackgrounds/CodBO4.png">
+                    </a>
+                </div>
+                <div class="trailer1 trailer-last">
+                    <a href="GamePages/Destiny2/destiny2.html">
+                        <img src="images/Games/GamingBackgrounds/Destiny2.jpg">
+                    </a>
+                </div>
+            </div>
+            <a class="viewall" href="#">View All</a>
+        </div>
+        <div class="sub">
+            <p>Get the best Game trailers straight in your inbox each week</p>
+            <form class="myform" method="POST" action="">
+                <input type="email" placeholder="Email Address" class="email" required>
+                <input type="submit" class="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+
+    <!---Footer-->
+    <div class="footer">
+        <h1><b>WATCH</b>TRAILER</h1>
+        <p>2019 WiredIn | All Rights Reserved</p>
+        <p>Privacy Policy</p>
+    </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    //Menu Toggle Button
+    $(document).ready(function(){
+        $('.menu-icon').on("click", function(){
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+    //Scrolling Effects
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass("black");
+        } else {
+            $('nav').removeClass('black');
+        }
+    });
+</script>
+</body>
+</html>
